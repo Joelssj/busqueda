@@ -1,0 +1,187 @@
+.data-table th h1 {
+    font-weight: bold;
+    font-size: auto;
+    text-align: center; 
+    color: #a9b1a8;
+}
+
+.data-table td {
+    font-weight: normal;
+    font-size: 1em;
+    text-align: center; 
+    -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+    -moz-box-shadow: 0 2px 2px -2px #190e0e;
+    box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.data-table {
+    text-align: center; 
+    overflow: hidden;
+    width: 90vw; 
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 8em 0;
+    border-radius: 1.2rem; 
+}
+
+.data-table td, .data-table th {
+    padding: 1%; 
+}
+
+.data-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.data-table th {
+    background-color: #81a8e6;
+}
+.nombre-alumno,
+.tipo-busqueda {
+    color: #000000;
+}
+.data-table td:first-child { color: #000000; }
+
+.data-table tr:hover {
+    background-color: #626262;
+    -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+    -moz-box-shadow: 0 6px 6px -6px #0E1119;
+    box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+.data-table td:hover {
+    background-color: #042a68;
+    color: #ffffff;
+    font-weight: bold;
+    
+    box-shadow: #81a8e6 -1px 1px, #81a8e6 -2px 2px, #81a8e6 -3px 3px, #81a8e6 -4px 4px, #81a8e6 -5px 5px, #81a8e6 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+.data-table td:nth-child(4),
+.data-table th:nth-child(4) { display: none; }
+}
+
+
+@media screen and (max-width: 600px) {
+    .data-table {
+        border: 0;
+        width: 100%;
+    }
+
+    .data-table thead {
+        display: none;
+    }
+
+    .data-table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .data-table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+    }
+
+    .data-table td::before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .data-table thead {
+        display: none;
+    }
+
+    .data-table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .data-table th, .data-table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+    }
+
+    .data-table th::before, .data-table td::before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+
+
+.contenedor {
+    margin-top: 3rem; 
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+    margin: auto;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+  
+.input {
+    height: 100%;
+    line-height: 28px;
+    padding: 0 1rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #D9E8D8;
+    color: #0d0c22;
+    text-align: center; 
+    box-shadow: 0 0 5px #050705, 0 0 0 10px #c6d0d2eb;
+    transition: .3s ease;
+}
+  
+  .input::placeholder {
+    color: #777777;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #6798c2;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+  
